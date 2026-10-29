@@ -50,3 +50,5 @@ README.md
 
 История локального репозитория и фактически выполненные команды описаны в [`FINAL/Etap_5_GitHub/Git_Commands.md`](./FINAL/Etap_5_GitHub/Git_Commands.md). Сведения о GitHub добавляются только после фактического создания удалённого репозитория и успешной проверки публикации.
 
+Публичный GitHub-репозиторий: [vertex34212/IT-Ticket-Manager](https://github.com/vertex34212/IT-Ticket-Manager).
+
