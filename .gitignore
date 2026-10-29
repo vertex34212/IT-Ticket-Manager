@@ -1,0 +1,29 @@
+# Системные и временные файлы
+.DS_Store
+.AppleDouble
+.LSOverride
+*~
+
+# Локальные настройки редакторов и окружения
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Кэш Python и локальные артефакты сборки
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+
+# Повторно сгенерированные визуальные материалы рабочих каталогов.
+# Итоговые файлы из FINAL не исключаются.
+/rendered_stage1/
+/rendered_stage1_v2/
+/rendered_srs/
+/rendered_srs2/
+/rendered_srs3/
+/stage3/rendered_final/
+/stage3/rendered_final2/
+

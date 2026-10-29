@@ -1,0 +1,41 @@
+@startuml
+title IT Ticket Manager - Диаграмма вариантов использования
+left to right direction
+actor "Пользователь" as User
+actor "IT-техник" as Tech
+rectangle "Система IT Ticket Manager" {
+  usecase "Авторизоваться" as U01
+  usecase "Создать заявку" as U02
+  usecase "Просмотреть свои заявки" as U03
+  usecase "Проверить статус" as U04
+  usecase "Добавить комментарий" as U05
+  usecase "Подтвердить решение" as U06
+  usecase "Сообщить о нерешённой проблеме" as U07
+  usecase "Просмотреть очередь заявок" as T01
+  usecase "Принять заявку в работу" as T02
+  usecase "Изменить статус" as T03
+  usecase "Указать результат решения" as T04
+  usecase "Закрыть заявку" as T05
+}
+User --> U01
+User --> U02
+User --> U03
+User --> U04
+User --> U05
+User --> U06
+User --> U07
+Tech --> U01
+Tech --> T01
+Tech --> T02
+Tech --> T03
+Tech --> T04
+Tech --> T05
+note bottom of T05
+Закрытие разрешено только после
+подтверждения автора заявки.
+end note
+note right of U07
+Отказ автора возвращает заявку
+в состояние «В работе».
+end note
+@enduml
